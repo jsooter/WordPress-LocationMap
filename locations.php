@@ -9,7 +9,7 @@
  */
 ?>
 <?php get_header(); ?>
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/ol.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/third-party/WordPress-LocationMap/ol.css">
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
@@ -37,16 +37,16 @@
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
-<?php include('third-party/locationMap/_templates/_map.php'); ?>
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/underscore-min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/backbone-min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/ol.js"></script>
+<?php include('third-party/WordPress-LocationMap/_templates/_map.php'); ?>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/WordPress-LocationMap/underscore-min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/WordPress-LocationMap/backbone-min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/WordPress-LocationMap/ol.js"></script>
 
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/js/routers.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/js/models.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/js/collections.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/js/views/map.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/js/views/county.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/WordPress-LocationMap/js/routers.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/WordPress-LocationMap/js/models.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/WordPress-LocationMap/js/collections.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/WordPress-LocationMap/js/views/map.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/WordPress-LocationMap/js/views/county.js"></script>
 
 <script type="text/javascript">
 	jQuery(function($) {

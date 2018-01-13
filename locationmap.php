@@ -9,9 +9,9 @@
  */
 ?>
 <?php get_header(); ?>
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/DataTables-1.10.13/media/css/jquery.dataTables.min.css">
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/Semantic-UI-CSS/semantic.min.css">
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/ol.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/third-party/WordPress-LocationMap/DataTables-1.10.13/media/css/jquery.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/third-party/WordPress-LocationMap/Semantic-UI-CSS/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/third-party/WordPress-LocationMap/ol.css">
 
 <style>
 	#primary {
@@ -163,21 +163,21 @@
 
 <?php //get_sidebar(); ?>
 <?php get_footer(); ?>
-<?php include('third-party/locationMap/_templates/_map.php'); ?>
-<?php include('third-party/locationMap/_templates/_location.php'); ?>
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/underscore-min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/backbone-min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/ol.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/csv2geojson.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/DataTables-1.10.13/media/js/jquery.dataTables.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/Semantic-UI-CSS/semantic.min.js"></script>
+<?php include('third-party/WordPress-LocationMap/_templates/_map.php'); ?>
+<?php include('third-party/WordPress-LocationMap/_templates/_location.php'); ?>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/WordPress-LocationMap/underscore-min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/WordPress-LocationMap/backbone-min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/WordPress-LocationMap/ol.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/WordPress-LocationMap/csv2geojson.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/WordPress-LocationMap/DataTables-1.10.13/media/js/jquery.dataTables.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/WordPress-LocationMap/Semantic-UI-CSS/semantic.min.js"></script>
 
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/js/routers.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/js/models.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/js/collections.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/js/views/map.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/js/views/county.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/js/views/location.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/WordPress-LocationMap/js/routers.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/WordPress-LocationMap/js/models.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/WordPress-LocationMap/js/collections.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/WordPress-LocationMap/js/views/map.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/WordPress-LocationMap/js/views/county.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/WordPress-LocationMap/js/views/location.js"></script>
 
 <script type="text/javascript">
 	jQuery(function($) {
