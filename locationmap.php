@@ -180,8 +180,6 @@
 <script src="<?php echo get_template_directory_uri(); ?>/third-party/WordPress-LocationMap/js/views/location.js"></script>
 
 <script type="text/javascript">
-	jQuery(function($) {
 	var mapRouter = new LocationMap.Routers.Map();
 	Backbone.history.start();
-	});
 </script>
