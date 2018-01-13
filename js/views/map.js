@@ -1,14 +1,14 @@
-var locationMap = locationMap || {};
-    locationMap.Views = locationMap.Views || {};
+var LocationMap = LocationMap || {};
+    LocationMap.Views = LocationMap.Views || {};
 
-    locationMap.Views.Map = Backbone.View.extend({
+    LocationMap.Views.Map = Backbone.View.extend({
         el: '#main',
         lat: null,
         lon: null,
         template: _.template(jQuery('#map_template').html()),
         events: {},
         initialize: function(options){
-            console.log('locationMap.Views.Map init');
+            console.log('LocationMap.Views.Map init');
             if (typeof options != 'undefined') {
                 if (typeof options.lat != 'undefined') {
                     this.lat = options.lat;
@@ -77,7 +77,7 @@ var locationMap = locationMap || {};
                     window.user_location = pos;
                     console.log(window.user_location);
                     if(!that.locations){
-                        that.locations = new locationMap.Views.Location({map:that.map});
+                        that.locations = new LocationMap.Views.Location({map:that.map});
                     }
                 });
                 var pos = geolocation.getPosition();
@@ -86,10 +86,10 @@ var locationMap = locationMap || {};
 
                 window.user_location = pos;
                 //if(!that.locations){
-                //    that.locations = new locationMap.Views.Location({map:this.map});
+                //    that.locations = new LocationMap.Views.Location({map:this.map});
                 //}
             } else {
-                this.locations = new locationMap.Views.Location({map:this.map});
+                this.locations = new LocationMap.Views.Location({map:this.map});
             }
             return this;
         }
