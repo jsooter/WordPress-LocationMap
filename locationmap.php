@@ -1,17 +1,17 @@
 <?php
 /**
- * Template Name: recycleMap
- * Recycle Locations Map Template
+ * Template Name: locationMap
+ * Location Locations Map Template
  *
- * This is the template that displays recycler locations on a map.
+ * This is the template that displays locationr locations on a map.
  * Please note that this is the WordPress construct of pages and that
  * other "pages" on your WordPress site will use a different template.
  */
 ?>
 <?php get_header(); ?>
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/third-party/recycleMap/DataTables-1.10.13/media/css/jquery.dataTables.min.css">
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/third-party/recycleMap/Semantic-UI-CSS/semantic.min.css">
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/third-party/recycleMap/ol.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/DataTables-1.10.13/media/css/jquery.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/Semantic-UI-CSS/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/ol.css">
 
 <style>
 	#primary {
@@ -163,25 +163,25 @@
 
 <?php //get_sidebar(); ?>
 <?php get_footer(); ?>
-<?php include('third-party/recycleMap/_templates/_map.php'); ?>
-<?php include('third-party/recycleMap/_templates/_location.php'); ?>
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/recycleMap/underscore-min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/recycleMap/backbone-min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/recycleMap/ol.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/recycleMap/csv2geojson.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/recycleMap/DataTables-1.10.13/media/js/jquery.dataTables.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/recycleMap/Semantic-UI-CSS/semantic.min.js"></script>
+<?php include('third-party/locationMap/_templates/_map.php'); ?>
+<?php include('third-party/locationMap/_templates/_location.php'); ?>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/underscore-min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/backbone-min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/ol.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/csv2geojson.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/DataTables-1.10.13/media/js/jquery.dataTables.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/Semantic-UI-CSS/semantic.min.js"></script>
 
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/recycleMap/js/routers.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/recycleMap/js/models.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/recycleMap/js/collections.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/recycleMap/js/views/map.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/recycleMap/js/views/county.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/third-party/recycleMap/js/views/location.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/js/routers.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/js/models.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/js/collections.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/js/views/map.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/js/views/county.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/third-party/locationMap/js/views/location.js"></script>
 
 <script type="text/javascript">
 	jQuery(function($) {
-	var mapRouter = new RecycleMap.Routers.Map();
+	var mapRouter = new LocationMap.Routers.Map();
 	Backbone.history.start();
 	});
 </script>

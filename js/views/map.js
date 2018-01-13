@@ -1,14 +1,14 @@
-var RecycleMap = RecycleMap || {};
-    RecycleMap.Views = RecycleMap.Views || {};
+var locationMap = locationMap || {};
+    locationMap.Views = locationMap.Views || {};
 
-    RecycleMap.Views.Map = Backbone.View.extend({
+    locationMap.Views.Map = Backbone.View.extend({
         el: '#main',
         lat: null,
         lon: null,
         template: _.template(jQuery('#map_template').html()),
         events: {},
         initialize: function(options){
-            console.log('RecycleMap.Views.Map init');
+            console.log('locationMap.Views.Map init');
             if (typeof options != 'undefined') {
                 if (typeof options.lat != 'undefined') {
                     this.lat = options.lat;
@@ -20,7 +20,7 @@ var RecycleMap = RecycleMap || {};
             this.render();
         },
         render: function(){
-            console.log('RecycleMap.Views.Map render');
+            console.log('locationMap.Views.Map render');
             jQuery(this.el).empty();
             jQuery(this.el).append(this.template());
             window.user_location = ol.proj.fromLonLat([-113.956522,46.879038]);
@@ -58,7 +58,7 @@ var RecycleMap = RecycleMap || {};
             });
             this.map.addControl(new ol.control.FullScreen());
             // this.map.addControl(new ol.control.ScaleLine({units:'us'}));
-            // this.counties = new RecycleMap.Views.County({map:this.map});
+            // this.counties = new locationMap.Views.County({map:this.map});
             // console.log('came here');
 
 
@@ -77,7 +77,7 @@ var RecycleMap = RecycleMap || {};
                     window.user_location = pos;
                     console.log(window.user_location);
                     if(!that.locations){
-                        that.locations = new RecycleMap.Views.Location({map:that.map});
+                        that.locations = new locationMap.Views.Location({map:that.map});
                     }
                 });
                 var pos = geolocation.getPosition();
@@ -86,10 +86,10 @@ var RecycleMap = RecycleMap || {};
 
                 window.user_location = pos;
                 //if(!that.locations){
-                //    that.locations = new RecycleMap.Views.Location({map:this.map});
+                //    that.locations = new locationMap.Views.Location({map:this.map});
                 //}
             } else {
-                this.locations = new RecycleMap.Views.Location({map:this.map});
+                this.locations = new locationMap.Views.Location({map:this.map});
             }
             return this;
         }

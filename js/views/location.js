@@ -1,7 +1,7 @@
-var RecycleMap = RecycleMap || {};
-    RecycleMap.Views = RecycleMap.Views || {};
+var LocationMap = LocationMap || {};
+    LocationMap.Views = LocationMap.Views || {};
 
-    RecycleMap.Views.Location = Backbone.View.extend({
+    LocationMap.Views.Location = Backbone.View.extend({
         el: '#locations',
         map: null,
         locations: [],
@@ -12,7 +12,7 @@ var RecycleMap = RecycleMap || {};
             'change #toggles select' : 'filterPoints'
         },
         initialize: function(options){
-            console.log('RecycleMap.Views.Location init');
+            console.log('LocationMap.Views.Location init');
             if (typeof options != 'undefined') {
                 if (typeof options.map != 'undefined') {
                     this.map = options.map;
@@ -60,7 +60,7 @@ var RecycleMap = RecycleMap || {};
             });
         },
         render: function(){
-            console.log('RecycleMap.Views.Location render');
+            console.log('LocationMap.Views.Location render');
             jQuery(this.el).empty();
             jQuery(this.el).append(this.template({location_layers:this.titles}));
             //var httpRequest = new XMLHttpRequest();
@@ -217,7 +217,7 @@ var RecycleMap = RecycleMap || {};
             console.log(this.locations);
             _.each(this.locations.features,function(feature){
                 console.log(feature.properties);
-                listItem = new RecycleMap.Views.LocationListItem({location:feature.properties});
+                listItem = new LocationMap.Views.LocationListItem({location:feature.properties});
             });
         },
         positionToggles: function(){
@@ -286,7 +286,7 @@ var RecycleMap = RecycleMap || {};
         }
     });
 
-    RecycleMap.Views.LocationListItem = Backbone.View.extend({
+    LocationMap.Views.LocationListItem = Backbone.View.extend({
         el: '#location_list',
         map: null,
         location: null,

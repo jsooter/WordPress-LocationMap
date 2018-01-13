@@ -1,7 +1,7 @@
-var RecycleMap = RecycleMap || {};
-    RecycleMap.Routers = RecycleMap.Routers || {};
+var LocationMap = LocationMap || {};
+    LocationMap.Routers = LocationMap.Routers || {};
     
-    RecycleMap.Routers.Map = Backbone.Router.extend({
+    LocationMap.Routers.Map = Backbone.Router.extend({
         mapView: null,
         routes: {
             "" : "start",
@@ -9,14 +9,14 @@ var RecycleMap = RecycleMap || {};
         },
         start: function(){
             console.log('Init route');
-            this.view = new RecycleMap.Views.Map();
+            this.view = new LocationMap.Views.Map();
         },
         defaultRoute: function(){
             console.log('Router does not handle this route');
         }
     });
     
-    RecycleMap.Routers.Location = Backbone.Router.extend({
+    LocationMap.Routers.Location = Backbone.Router.extend({
         mapView: null,
         routes: {
             "" : "start",
@@ -29,7 +29,7 @@ var RecycleMap = RecycleMap || {};
         },
         start: function(){
             console.log('Init route');
-            this.view = new RecycleMap.Views.Location();
+            this.view = new LocationMap.Views.Location();
         },
         defaultRoute: function(){
             console.log('Router does not handle this route');

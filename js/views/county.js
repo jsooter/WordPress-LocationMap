@@ -1,11 +1,11 @@
-var RecycleMap = RecycleMap || {};
-    RecycleMap.Views = RecycleMap.Views || {};
+var LocationMap = LocationMap || {};
+    LocationMap.Views = LocationMap.Views || {};
     
-    RecycleMap.Views.County = Backbone.View.extend({
+    LocationMap.Views.County = Backbone.View.extend({
         map: null,
         exchangeLayer: null,
         initialize: function(options){
-            console.log('RecycleMap.Views.County init');
+            console.log('LocationMap.Views.County init');
             if (typeof options != 'undefined') {
                 if (typeof options.map != 'undefined') {
                     this.map = options.map;
@@ -14,7 +14,7 @@ var RecycleMap = RecycleMap || {};
             this.render();
         },
         render: function(){
-            console.log('RecycleMap.Views.County render');
+            console.log('LocationMap.Views.County render');
             var that = this;
             jQuery('script').each(function(){
                 var src = jQuery(this).attr('src');
